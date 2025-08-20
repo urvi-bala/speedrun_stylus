@@ -33,8 +33,12 @@ Before starting, ensure you have the following installed:
   cargo install cargo-stylus
   ```
 
+<<<<<<< HEAD
   > ⚠️ **Note for Ubuntu users**: If you face issues related to pkg-config while trying to install cargo-stylus, run these commands:
 
+=======
+    > ⚠️ **Note for Ubuntu users**: If you face issues related to pkg-config while trying to install cargo-stylus, run these commands:
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
   ```bash
   sudo apt update
   sudo apt install pkg-config
@@ -42,6 +46,10 @@ Before starting, ensure you have the following installed:
   sudo apt install build-essential
   ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 - [Foundry](https://getfoundry.sh/introduction/installation/) - Required for smart contract development
 
 ### Foundry Installation Steps:
@@ -49,7 +57,10 @@ Before starting, ensure you have the following installed:
 #### 1. Open your WSL terminal.
 
 #### 2. Install Foundry using the official install script:
+<<<<<<< HEAD
 
+=======
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 ```bash
 curl -L https://foundry.paradigm.xyz | bash
 ```
@@ -114,6 +125,10 @@ cast --version
 forge --version
 ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 ### 🚩 Challenge Setup Instructions
 
 #### For Ubuntu/Mac Users:
@@ -155,6 +170,7 @@ forge --version
 
 5. Open [http://localhost:3000](http://localhost:3000) to see the app.
 
+<<<<<<< HEAD
 ### ⚠️ Important: Contract Address Setup
 
 After running the devnode script, **copy the contract address** from the bash terminal output. You will need to paste this address into the `contractAddress` variable in the `DebugContract` component.
@@ -169,6 +185,10 @@ After running the devnode script, **copy the contract address** from the bash te
 
 > 📝 **Note**: After completing step 4 below, make sure to follow the "Contract Address Setup" section above for configuring your contract address.
 
+=======
+#### For Windows Users (Using WSL):
+
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 1. Open your WSL terminal.
 2. Ensure you have set your Git username and email globally:
 
@@ -194,6 +214,10 @@ After running the devnode script, **copy the contract address** from the bash te
    yarn install
    ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 4. Start the local devnode in Docker:
 
    ```bash
@@ -204,7 +228,20 @@ After running the devnode script, **copy the contract address** from the bash te
    bash run-dev-node.sh
    ```
 
+<<<<<<< HEAD
 5. In a second WSL terminal window, start your frontend:
+=======
+5. **Copy the contract address** from the bash terminal output. You will need to paste this address into the `contractAddress` variable in the `DebugContract` component.
+
+> 💡 **Note**: If both contract addresses are the same, you don't need to do anything - you're ready to go and interact with the stylus-based smart contracts written in RUST!
+
+
+![DockerImg](https://github.com/user-attachments/assets/04159bef-cc35-442f-b67a-5e8f7033db43)
+
+<p align="center"><em>Docker_Img</em></p>
+
+6. In a second WSL terminal window, start your frontend:
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 
    ```bash
    cd speedrun_stylus/packages/nextjs
@@ -214,7 +251,11 @@ After running the devnode script, **copy the contract address** from the bash te
    yarn run dev
    ```
 
+<<<<<<< HEAD
 6. Open [http://localhost:3000](http://localhost:3000) to see the app.
+=======
+7. Open [http://localhost:3000](http://localhost:3000) to see the app.
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 
 ### 🛠️ Troubleshooting Common Issues
 
@@ -292,6 +333,7 @@ Shell scripts created in Windows often have `CRLF` line endings, which cause iss
 
 ---
 
+<<<<<<< HEAD
 ## 📊 Performance Tracking
 
 Before submitting your challenge, you can run the performance tracking script to analyze your application:
@@ -320,23 +362,34 @@ This will provide insights about the savings when you cache your deployed contra
 
 ---
 
+=======
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 ## 🚀 Submitting Your Challenge
 
 After you have completed the setup and are ready to submit your solution, follow these steps:
 
 1. **Create a New GitHub Repository**
+<<<<<<< HEAD
 
    - Go to [GitHub](https://github.com/) and create a new repository (public or private as required by the challenge).
 
 2. **Set Your Local Repository's Remote URL**
 
+=======
+   - Go to [GitHub](https://github.com/) and create a new repository (public or private as required by the challenge).
+
+2. **Set Your Local Repository's Remote URL**
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
    - In your project directory, update the remote URL to your new repository:
      ```bash
      git remote set-url origin https://github.com/yourusername/your-repo.git
      ```
 
 3. **Push Your Code to GitHub**
+<<<<<<< HEAD
 
+=======
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
    - Add and commit any changes if you haven't already:
      ```bash
      git add .
@@ -436,6 +489,7 @@ cargo stylus deploy -e http://127.0.0.1:8547 --private-key "$your_private_key"
 
 ---
 
+<<<<<<< HEAD
 ## 🚀 Deploying to Arbitrum Sepolia
 
 If you want to deploy your contract to the Arbitrum Sepolia testnet, follow these steps:
@@ -533,4 +587,6 @@ For more in-depth details and the latest updates, visit the [smart-cache-cli pac
 
 ---
 
+=======
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 > 🏃 Head to your next challenge [here](https://www.speedrunstylus.com/challenge/simple-nft-example).

@@ -4,9 +4,15 @@ import { useEffect, useState } from "react";
 import { ICounter } from "./ICounter";
 import { ethers } from "ethers";
 
+<<<<<<< HEAD
 const contractAddress="0x1984b293c9880df8ec30e76196dac387ccf96746";
 const provider = new ethers.JsonRpcProvider(process.env.NEXT_PUBLIC_RPC_URL || "");
 const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY || "";
+=======
+const contractAddress = "0xa6e41ffd769491a42a6e5ce453259b93983a22ef";
+const provider = new ethers.JsonRpcProvider("http://localhost:8547/");
+const privateKey = "0xb6b15c8cb491557369f3c7d2c287b053eb229daa9c22138887752191c9520659";
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 const signer = new ethers.Wallet(privateKey, provider);
 const contract = new ethers.Contract(contractAddress, ICounter, signer);
 

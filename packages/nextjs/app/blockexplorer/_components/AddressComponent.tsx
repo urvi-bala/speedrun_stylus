@@ -15,8 +15,13 @@ const client = createPublicClient({
       symbol: "ETH",
     },
     rpcUrls: {
+<<<<<<< HEAD
       default: { http: ["process.env.NEXT_PUBLIC_RPC_URL"] },
       public: { http: ["process.env.NEXT_PUBLIC_RPC_URL"] },
+=======
+      default: { http: ["http://localhost:8547"] },
+      public: { http: ["http://localhost:8547"] },
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
     },
   },
   transport: http(),

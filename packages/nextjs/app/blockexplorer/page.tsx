@@ -9,6 +9,7 @@ import { useFetchBlocks } from "~~/hooks/scaffold-eth";
 // Create a custom chain configuration for local Arbitrum Nitro
 const localNitro = {
   id: 412346,
+<<<<<<< HEAD
   name: "Local Nitro",
   network: "nitro-local",
   nativeCurrency: {
@@ -19,12 +20,28 @@ const localNitro = {
   rpcUrls: {
     default: { http: ["process.env.NEXT_PUBLIC_RPC_URL"] },
     public: { http: ["process.env.NEXT_PUBLIC_RPC_URL"] },
+=======
+  name: 'Local Nitro',
+  network: 'nitro-local',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Ethereum',
+    symbol: 'ETH',
+  },
+  rpcUrls: {
+    default: { http: ['http://localhost:8547'] },
+    public: { http: ['http://localhost:8547'] },
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
   },
 } as const;
 
 const publicClient = createPublicClient({
   chain: localNitro,
+<<<<<<< HEAD
   transport: http(),
+=======
+  transport: http()
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
 });
 
 const BlockExplorer: NextPage = () => {
@@ -40,7 +57,11 @@ const BlockExplorer: NextPage = () => {
         console.error("Failed to connect to Nitro node:", error);
       }
     };
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
     checkConnection();
   }, []);
 
@@ -49,7 +70,11 @@ const BlockExplorer: NextPage = () => {
       <div className="container mx-auto my-10 p-4">
         <div className="alert alert-error">
           <p className="font-bold">Cannot connect to local Arbitrum Nitro node</p>
+<<<<<<< HEAD
           <p>Make sure your Nitro node is running at process.env.NEXT_PUBLIC_RPC_URL</p>
+=======
+          <p>Make sure your Nitro node is running at http://localhost:8547</p>
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
         </div>
       </div>
     );

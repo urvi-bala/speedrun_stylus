@@ -23,6 +23,10 @@
       }
     ]
   },
+<<<<<<< HEAD
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "services/web3/performanceTracking.js"],
+=======
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+>>>>>>> e96684ef48fb7565ff6645acb0771ee4bd9889f4
   "exclude": ["node_modules"]
 }
